@@ -39,17 +39,6 @@
     color: var(--active);
 }
 
-/* .button-menu-link {
-    background-color: var(--surface-600);
-    border: solid 1px var(--surface-600);
-    border-radius: 10px;
-}
-
-.button-menu-link:hover {
-    background-color: var(--surface-500);
-    border: solid 1px var(--surface-500);
-    border-radius: 10px;
-} */
 
 
 .imagen-logo-layout {
@@ -129,8 +118,12 @@
 }
 
 .carousel-container {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.carousel-container .p-carousel-container {
+    justify-content: space-between;
 }
 
 .carousel-item-xxxxxx {

@@ -5,7 +5,6 @@ import { NotFound } from './../../Pages/NotFound';
 import { Home } from './../../Pages/Home';
 import { AboutUs } from './../../Pages/AboutUs';
 import { Catalog } from './../../Pages/Catalog';
-import { Promotions } from './../../Pages/Promotions';
 import { Shopping_Cart } from './../../Pages/Shopping_Cart';
 import { ContactUs } from './../../Pages/ContactUs';
 
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
             {
                 path: 'catalog',
                 element: <Catalog />,
-            },
-            {
-                path: 'promotions',
-                element: <Promotions />,
             },
             {
                 path: 'about', 

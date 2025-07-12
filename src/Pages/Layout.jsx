@@ -15,7 +15,6 @@ export const Layout = () => {
   const items = [
     { label: 'Home', icon: 'pi pi-fw pi-home', template: () => <Link to="/home" className='link-menu'><Button label="Home" icon="pi pi-home" className='button-menu-link'/></Link> },       
     { label: 'Catalog', icon: 'pi pi-fw pi-th-large',template: () => <Link to="/catalog" className='link-menu'><Button label="Catálogo" icon="pi pi-shop" className='button-menu-link'/></Link> },
-    { label: 'Promotions', icon: 'pi pi-fw pi-gift',template: () => <Link to="/promotions" className='link-menu'><Button label="Promociones" icon="pi pi-megaphone" className='button-menu-link'/></Link> },
     { label: 'Contáctenos', icon: 'pi pi-fw pi-telegram',template: () => <Link to="/contactUs" className='link-menu'><Button label="Contáctenos" icon="pi pi-telegram"  className='button-menu-link'/></Link> },
     { label: 'Acerca de nostros', icon: 'pi pi-fw pi-building-columns',template: () => <Link to="/about" className='link-menu'><Button label="Acerca de nosotros" icon="pi pi-warehouse" className='button-menu-link'/></Link> },
     { label: 'Carrito de compras', icon: 'pi pi-fw pi-cart-plus',template: () => <Link to="/shoppingCart" className='link-menu'><Button label="Carrito de compras" icon="pi pi-shopping-cart"  className='button-menu-link'/></Link> }
