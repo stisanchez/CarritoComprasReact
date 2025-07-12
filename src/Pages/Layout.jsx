@@ -41,7 +41,7 @@ export const Layout = () => {
           </div>
         </div>
         <div>
-          <Card title="Sistema de compras en línea">
+          <Card>
             <Outlet />
           </Card>
 
