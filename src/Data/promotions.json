@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Oferta en ropa de vestir",
+        "description": "Obtenga grandes descuentos en ropa de vestir sólo por este fin de smena a, en ropa de vestir para dama, caballeros y niños",
+        "image": "https://static.vecteezy.com/system/resources/previews/008/683/288/large_2x/fashion-clothes-during-online-shopping-promotions-and-discounts-will-be-surrounded-by-shirts-shoes-sunglasses-and-gift-boxes-and-packages-with-advertising-space-banner-pastel-background-3d-rendering-photo.jpg",
+        "details": "- 50%"
+    },
+    {
+        "id": 2,
+        "title": "Fashion ofertas",
+        "description": "Conseguí la nueva colección Fashion para el próximo verano, productos a precios increíbles sólo por este mes",
+        "image": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fashion-clothing-sale-ad-event-template-design-9fc88cd7e3daaae6bce97ce076068efb_screen.jpg?ts=1637009534",
+        "details": "2ndo artículo a mitad de precio"
+    },
+    {
+        "id": 3,
+        "title": "Nueva colección de invierno",
+        "description": "Con su nueva tarjeta preferencial, obtenga productos a un precio inimaginable. Si no tiese su membresía o dude en consultar por ella!!!",
+        "image": "https://asset.gecdesigns.com/img/flyer-templates/spring-fashion-sale-promotion-flyer-template-1642226754269-cover.webp",
+        "details": "Desde 10% hasta 50%"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Suplidora ABC",
+        "description": "",
+        "logo": "https://media.istockphoto.com/id/1201144331/es/vector/logotipo-de-icon-design-element-para-la-empresa-de-innovaci%C3%B3n-tecnol%C3%B3gica-icono-tecnol%C3%B3gico.jpg?s=612x612&w=0&k=20&c=WAmY6ZzgRgS5P4lDBuiFYirP1Pr0mnEVajqW0QGdU4I="
+    
+    },
+    {
+        "id": 2,
+        "name": "Ropa americana del sur",
+        "description": "",
+        "logo": "https://img.freepik.com/premium-vector/logo-company-company-white-background_1072857-23733.jpg?semt=ais_hybrid&w=740"
+    },
+    {
+        "id": 3,
+        "name": "Ropa deportiva hadidas",
+        "description": "",
+        "logo": "https://img.freepik.com/vector-premium/letras-c-perfectas-logotipos-empresas-oficinas-campus-escuelas-educacion-religiosa_639175-1760.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ropa de niños XWEE",
+        "description": "",
+        "logo": "https://img.freepik.com/premium-vector/business-company-logo_7436-15.jpg"
+    },
+    {
+        "id": 5,
+        "name": "ROpa americana",
+        "description": "",
+        "logo": "https://cdn.shopify.com/s/files/1/0229/0839/files/image4_d9f93edc-fdfc-4f66-889a-d91312011fcf.jpg?v=1732471839"
+    }
+]
