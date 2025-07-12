@@ -28,17 +28,16 @@ export const Layout = () => {
     <>
       <div>
         <div className="menu-layout">
-          <div>
-            {/* <Image src='/Images/logo-empresa.jpg' alt="Image" width="250" /> */}
+          <div className='divLogo'>
             <Image src='https://png.pngtree.com/png-clipart/20190613/original/pngtree-logo-company-design-png-image_3588263.jpg' alt="Image" width="60" className='imagen-logo-layout' />
           </div>
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-              <MegaMenu model={items} orientation="horizontal" breakpoint="960px" className="p-3 surface-0 shadow-2" />
+          <div className='divNavBar'>
+            <MegaMenu className='NavBar' model={items} orientation="horizontal" />
+          </div>
+          <div className='divCarrito'>
               <i className="pi pi-cart-plus p-overlay-badge contenedor-carrito" style={{ fontSize: '2rem' }} >
                 <Badge value={cantidadCarrito}></Badge>
               </i>
-            </div>
           </div>
         </div>
         <div>

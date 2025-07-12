@@ -1,17 +1,56 @@
-.menu-layout {
-    background-color: #4b5563;
-    padding: 10px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+:root{
+  --primary: #001733;
+  --secondary: #553bcb;
+  --darkgray: #22262a;
+  --ligthgray: #d3d3d3;
+  --gray: #808080;
+  --white: #f8f8f8;
+  --active: #61dafb;
 }
 
-.p-menuitem-link:hover {
-    background-color: #dfe6ef;
-    border-radius: 10px;
-    ;
+.menu-layout {
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    background-color: var(--primary);
+    padding: 10px;
 }
+
+.menu-layout .divNavBar {
+    display: flex;
+    justify-content: end;
+}
+
+.menu-layout .divNavBar .NavBar {
+    background: var(--primary);
+    border: none;
+}
+
+.menu-layout .divNavBar .NavBar .p-menuitem-content:hover{
+    color: none;
+    background: none;
+}
+
+.menu-layout .divNavBar .NavBar button{
+    background: var(--primary);
+    border: none;
+}
+
+.menu-layout .divNavBar .NavBar button:hover{
+    color: var(--active);
+}
+
+/* .button-menu-link {
+    background-color: var(--surface-600);
+    border: solid 1px var(--surface-600);
+    border-radius: 10px;
+}
+
+.button-menu-link:hover {
+    background-color: var(--surface-500);
+    border: solid 1px var(--surface-500);
+    border-radius: 10px;
+} */
+
 
 .imagen-logo-layout {
     width: 60px;
@@ -210,7 +249,6 @@
 }
 
 .link-menu {
-    margin: 10px 15px;
     text-decoration: none;
     color: #000000;
     font-size: 18px;
@@ -219,16 +257,4 @@
 
 .p-megamenu-horizontal {
     align-items: center;
-}
-
-.button-menu-link {
-    background-color: var(--surface-600);
-    border: solid 1px var(--surface-600);
-    border-radius: 10px;
-}
-
-.button-menu-link:hover {
-    background-color: var(--surface-500);
-    border: solid 1px var(--surface-500);
-    border-radius: 10px;
 }
