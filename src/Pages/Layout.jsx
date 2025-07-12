@@ -3,6 +3,7 @@ import { Button } from 'primereact/button';
 import { MegaMenu } from 'primereact/megamenu';
 import 'primeicons/primeicons.css';
 import '../styles/layout.css'
+import '../styles/Panels.css'
 import { Image } from 'primereact/image';
 import { Link, Outlet, redirect } from 'react-router-dom';
 import { Card } from 'primereact/card';

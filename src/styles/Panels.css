@@ -1,0 +1,24 @@
+.divPanelText {
+    padding: 1rem;
+}
+
+.paneltextImage .info-text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paneltextImage .image-side {
+    display: flex;
+    align-items: center;
+}
+
+.paneltextImage .image-side img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.paneltextImage p {
+    text-align: justify;
+}
