@@ -2,19 +2,15 @@ import React, { useContext, useEffect } from 'react'
 import DataContext from '../Components/Context/DataContext';
 import { CardProduct } from '../Components/Shopping_Card/CardProduct';
 import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
+import { ReciboCarrito } from '../Components/Shopping_Card/ReciboCarrito';
 
 export const Shopping_Cart = () => {
-
-  const { usuario, carrito } = useContext(DataContext);
-
-  console.log('Shop usuario:', usuario);
-  console.log('Shop carrito:', carrito);
+  const { usuario } = useContext(DataContext);
 
   const storedName = sessionStorage.getItem('car');
   const carList = JSON.parse(storedName);
-  console.log('Shop storedName:', JSON.parse(storedName));
-  console.log('Shop carList:', carList);
-
+  const datosTotalesCompra = { subtotal: 100, iva: 13, totalCompra: 113 }
   return (
     <>
       <div>
@@ -26,10 +22,11 @@ export const Shopping_Cart = () => {
         {
           carList.map(item => (
             <CardProduct
-              key={item.id}
-              nombre={item.title}
-              cantidad={1}
-              precioUnitario={item.price}
+              key={item.id_item}
+              nombre={item.descripcion}
+              cantidad={item.cantidad}
+              precioUnitario={item.precio}
+              id={item.id_item}
             />
           ))
         }
@@ -37,11 +34,8 @@ export const Shopping_Cart = () => {
       </div>
       <div className='contenedor-botones-shoppingCar'>
         <Button label="Cancelar" link onClick={() => window.open('https://react.dev', '_blank')} />
-        <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="p-button font-bold">
-          Procesar compra
-        </a>
+        <ReciboCarrito />
       </div>
-
     </>
 
   )
