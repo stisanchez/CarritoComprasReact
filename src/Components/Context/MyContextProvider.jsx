@@ -35,7 +35,7 @@ export const MyContextProvider = () => {
     setCarritoFinal((prevItems) => prevItems.filter(item => item.id_item !== itemIdToDelete));
     setItemIdToDelete(null);
     console.log('setCarritoFinal: ', carritoFinal);
-  }, [itemIdToDelete]);
+  }, [itemIdToDelete]);  
 
   useEffect(() => {
         sessionStorage.setItem('car', JSON.stringify(carritoFinal));

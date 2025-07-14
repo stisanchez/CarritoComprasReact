@@ -16,7 +16,7 @@ export const Catalog = () => {
   };
 
   const agregadoACarrito = () => {
-    toast.current.show({ severity: 'success', summary: 'Articulo agregado', detail: 'Articulo agregado ', life: 3000 });
+    toast.current.show({ severity: 'success', summary: 'Articulo agregado', detail: 'Articulo agregado ', life: 1000 });
   };
 
   return (
