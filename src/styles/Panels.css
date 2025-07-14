@@ -22,3 +22,19 @@
 .paneltextImage p {
     text-align: justify;
 }
+@media (max-width: 768px) {
+  .paneltextImage {
+    flex-direction: column;
+  }
+
+  .paneltextImage .image-side img {
+    max-height: 300px;
+  }
+}
+.paneltextImage {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Para que sea responsive */
+}
