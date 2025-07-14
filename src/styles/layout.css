@@ -54,7 +54,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 125px;
+    gap: 1rem;
 }
 
 .contenedor-cards {
