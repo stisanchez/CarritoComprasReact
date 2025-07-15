@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "🚚",
+    "title": "Envío rápido",
+    "description": "Recibe tus productos en tiempo récord, directo a tu puerta."
+  },
+  {
+    "icon": "🔁",
+    "title": "Cambios fáciles",
+    "description": "Realiza cambios sin complicaciones en caso de que algo no te guste."
+  },
+  {
+    "icon": "💳",
+    "title": "Pago seguro",
+    "description": "Tus pagos están protegidos con las mejores plataformas de seguridad."
+  },
+  {
+    "icon": "📦",
+    "title": "Productos garantizados",
+    "description": "Solo ofrecemos productos de calidad con garantía confiable."
+  }
+]

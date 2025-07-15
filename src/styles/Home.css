@@ -1,24 +1,75 @@
 .divHome .branch-container {
-    background-color: #FFF;
-    padding: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
-.divHome .branch-container h1{
-    margin: 0;
-    padding: 0;
+.divHome .branch-container h1,
+.divHome .divBeneficios h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #333;
 }
 
 .divHome .branch-container .branch-carousel {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
-.divHome .branch-container .branch-carousel .p-carousel-items-content{
-    width: 100%;
+.divHome .branch-container .branch-carousel .p-carousel-items-content {
+  width: 100%;
 }
 
 .divHome .branch-container .branch-carousel .p-carousel-items-content .justify-content-center {
+  text-align: center;
+}
+
+.divHome .branch-container .branch-carousel .p-carousel-items-content .justify-content-center img {
+  height: 80px;
+  object-fit: contain;
+}
+
+.divHome .divBeneficios {
+  background: #f0f4f8;
+  padding: 2rem;
+}
+
+.divHome .divBeneficios .beneficios-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.divHome .divBeneficios .beneficios-container .beneficios-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 220px;
+    flex: 1 1 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
     text-align: center;
 }
+
+  .divHome .divBeneficios .beneficios-container .beneficios-card .icono {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .divHome .divBeneficios .beneficios-container .beneficios-card .titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    color: #222;
+  }
+  .divHome .divBeneficios .beneficios-container .beneficios-card .descripcion {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
 
 .logo-img {
   filter: grayscale(100%);
