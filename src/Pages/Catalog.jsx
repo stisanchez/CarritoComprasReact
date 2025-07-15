@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import GetAll_Products from '../Components/Utils/GetProducts';
 import CardProductsBig from '../Components/Products/CardProductsBig';
 import { InputText } from 'primereact/inputtext';

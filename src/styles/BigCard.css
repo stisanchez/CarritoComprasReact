@@ -228,6 +228,10 @@ body {
   margin-bottom: "1.5rem";
 }
 
+.divCatalog {
+    padding: 1.25rem;
+}
+
 .divCatalog .contenedor-products-list .divLoading {
   display: flex;
   justify-content: center;

@@ -1,4 +1,3 @@
-import { TabMenu } from 'primereact/tabmenu';
 import { Button } from 'primereact/button';
 import { MegaMenu } from 'primereact/megamenu';
 import 'primeicons/primeicons.css';
@@ -10,6 +9,7 @@ import { Card } from 'primereact/card';
 import { Badge } from 'primereact/badge';
 import { useContext } from 'react';
 import DataContext from '../Components/Context/DataContext';
+import LogoEmpresa from '../Images/logo-empresa.png'
 
 export const Layout = () => {
 
@@ -29,7 +29,7 @@ export const Layout = () => {
       <div>
         <div className="menu-layout">
           <div className='divLogo'>
-            <Image src='https://png.pngtree.com/png-clipart/20190613/original/pngtree-logo-company-design-png-image_3588263.jpg' alt="Image" width="60" className='imagen-logo-layout' />
+            <Image src={LogoEmpresa} alt="Zkotia Store" className='imagen-logo-layout' />
           </div>
           <div className='divNavBar'>
             <MegaMenu className='NavBar' model={items} orientation="horizontal" />
