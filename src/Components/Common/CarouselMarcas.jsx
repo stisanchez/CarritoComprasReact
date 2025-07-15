@@ -32,7 +32,7 @@ const LogoCarousel = () => {
                 numVisible={4}
                 numScroll={1}
                 responsiveOptions={responsiveOptions}
-                autoplayInterval={2500}
+                autoplayInterval={2000}
                 circular
                 showIndicators={false}
                 showNavigators={false}

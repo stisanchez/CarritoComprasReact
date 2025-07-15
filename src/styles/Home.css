@@ -20,11 +20,20 @@
   width: 100%;
 }
 
-.divHome .branch-container .branch-carousel .p-carousel-items-content .justify-content-center {
+.divHome
+  .branch-container
+  .branch-carousel
+  .p-carousel-items-content
+  .justify-content-center {
   text-align: center;
 }
 
-.divHome .branch-container .branch-carousel .p-carousel-items-content .justify-content-center img {
+.divHome
+  .branch-container
+  .branch-carousel
+  .p-carousel-items-content
+  .justify-content-center
+  img {
   height: 80px;
   object-fit: contain;
 }
@@ -43,33 +52,64 @@
 }
 
 .divHome .divBeneficios .beneficios-container .beneficios-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    padding: 2rem;
-    max-width: 220px;
-    flex: 1 1 220px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
-    text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 220px;
+  flex: 1 1 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  text-align: center;
 }
 
-  .divHome .divBeneficios .beneficios-container .beneficios-card .icono {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
+.divHome .divBeneficios .beneficios-container .beneficios-card .icono {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
 
-  .divHome .divBeneficios .beneficios-container .beneficios-card .titulo {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    font-weight: 700;
-    color: #222;
-  }
-  .divHome .divBeneficios .beneficios-container .beneficios-card .descripcion {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.4;
-  }
+.divHome .divBeneficios .beneficios-container .beneficios-card .titulo {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #222;
+}
+.divHome .divBeneficios .beneficios-container .beneficios-card .descripcion {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.divHome .divBannerPublicitario .divImgBanner {
+  position: relative;
+  width: 100%;
+}
+
+.divHome .divBannerPublicitario .divImgBanner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+}
+
+.divHome .divBannerPublicitario .divImgBanner .divResume {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  max-width: 600px;
+}
+
+.divHome .divBannerPublicitario .divImgBanner .divResume h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.divHome .divBannerPublicitario .divImgBanner .divResume p {
+  font-size: 1.2rem; 
+  margin-bottom: 1.5rem;
+}
 
 .logo-img {
   filter: grayscale(100%);

@@ -1,0 +1,32 @@
+[
+    {
+        "itemImageSrc": "https://academia.nubimetrics.com/hubfs/productos-tecnologicos-2.jpg",
+        "alt": "Tecnología",
+        "title": "Los mejores productos tecnológicos",
+        "description": "Explora lo último en smartphones, laptops y más."
+    },
+    {
+        "itemImageSrc": "https://cookingmenaje.com/wp-content/uploads/2017/12/categoria-articulos-electricos-banner-cooking-menaje-del-hogar-1024x323.jpg",
+        "alt": "Cocina",
+        "title": "Artículos de cocina de alta calidad",
+        "description": "Todo lo que necesitás para cocinar como un chef en casa."
+    },
+    {
+        "itemImageSrc": "https://cotram.es/wp-content/uploads/2023/10/Equipo-deportivo.webp",
+        "alt": "Deportes",
+        "title": "Equipamiento deportivo para todos",
+        "description": "Encuentra ropa, calzado y accesorios para tus deportes favoritos."
+    },
+    {
+        "itemImageSrc": "https://fanatica.com.co/wp-content/uploads/2025/05/Banner-fanatica.png",
+        "alt": "Moda",
+        "title": "Tendencias de moda para cada temporada",
+        "description": "Descubrí las últimas novedades en ropa y accesorios."
+    },
+    {
+        "itemImageSrc": "https://media.admagazine.com/photos/648cd919d6ffbb9c781e28c0/16:9/w_2560%2Cc_limit/renovar-los-muebles-sala.jpg",
+        "alt": "Hogar",
+        "title": "Decoración y muebles para tu hogar",
+        "description": "Transforma tus espacios con estilo y confort."
+    }
+]
