@@ -206,17 +206,17 @@ body {
   font-size: 11px;
   color: #71717a;
 }
-.card-catalog .info .meta .rating .stock--high {
+.card-catalog .info .meta .stock--high {
   font-size: 11px;
   font-weight: 600;
   color: #22c55e;
 }
-.card-catalog .info .meta .rating .stock--low {
+.card-catalog .info .meta .stock--low {
   font-size: 11px;
   font-weight: 600;
   color: #c5ba22;
 }
-.card-catalog .info .meta .rating .stock--none {
+.card-catalog .info .meta .stock--none {
   font-size: 11px;
   font-weight: 600;
   color: #c52222;

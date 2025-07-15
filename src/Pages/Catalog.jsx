@@ -1,28 +1,27 @@
-import React, { useState } from 'react'
-import GetAll_Products from '../Components/Utils/GetProducts'
+import React, { useState, useRef, useEffect } from 'react';
+import GetAll_Products from '../Components/Utils/GetProducts';
 import CardProductsBig from '../Components/Products/CardProductsBig';
 import { InputText } from 'primereact/inputtext';
 import { Dropdown } from 'primereact/dropdown';
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 export const Catalog = () => {
   const { products } = GetAll_Products();
 
   const [search, setSearch] = useState('');
   const [tipo, setTipo] = useState('');
+  const [visibleCount, setVisibleCount] = useState(20);
+  const [loading, setLoading] = useState(false);
+  const observer = useRef();
 
-  // Categorías únicas
   const categorias = [...new Set(products.map((p) => p.category))];
   const opcionesCategorias = [
     { label: 'Todos los tipos', value: '' },
-    ...categorias.map((cat) => ({
-      label: cat,
-      value: cat // <- asegúrate que sea un string
-    }))
+    ...categorias.map((cat) => ({ label: cat, value: cat }))
   ];
 
   const productosFiltrados = products.filter((product) => {
     const tipoStr = typeof tipo === "string" ? tipo : "";
-
     const categoriaStr = typeof product.category === "string" ? product.category : "";
 
     const coincideCategoria =
@@ -35,11 +34,32 @@ export const Catalog = () => {
     return coincideCategoria && coincideBusqueda;
   });
 
+  // Mostrar solo una parte de los productos filtrados
+  const productosVisibles = productosFiltrados.slice(0, visibleCount);
+
   const onTipoChange = (e) => {
     setTipo(e.value);
     setSearch('');
+    setVisibleCount(20);
   };
-  console.log('tipo seleccionado:', tipo);
+
+  // Lazy loading con IntersectionObserver
+  const lastProductRef = (node) => {
+    if (loading) return;
+    if (observer.current) observer.current.disconnect();
+
+    observer.current = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && visibleCount < productosFiltrados.length) {
+        setLoading(true);
+        setTimeout(() => {
+          setVisibleCount((prev) => prev + 20);
+          setLoading(false);
+        }, 500);
+      }
+    });
+
+    if (node) observer.current.observe(node);
+  };
 
   return (
     <div className='divCatalog'>
@@ -61,19 +81,35 @@ export const Catalog = () => {
           className="p-dropdown-sm"
           style={{ flex: 1 }}
         />
-
       </div>
 
       {/* Lista de productos */}
       <div className='contenedor-products-list'>
-        {productosFiltrados.length > 0 ? (
-          productosFiltrados.map((product) => (
-            <CardProductsBig key={product.id} product={product} />
-          ))
-        ) : (
-          <p>No se encontraron productos.</p>
+        {productosVisibles.map((product, index) => {
+          const isLast = index === productosVisibles.length - 1;
+          return (
+            <div ref={isLast ? lastProductRef : null} key={product.id}>
+              <CardProductsBig product={product} />
+            </div>
+          );
+        })}
+
+        {loading && (
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '2rem',
+            backgroundColor: 'rgba(0, 23, 51, 0.05)', // azul oscuro transparente
+            borderRadius: '8px',
+            marginTop: '1rem'
+          }}>
+            <ProgressSpinner style={{ width: '60px', height: '60px' }} strokeWidth="4" />
+          </div>
         )}
+
+        {productosVisibles.length === 0 && !loading && <p>No se encontraron productos.</p>}
       </div>
     </div>
-  )
-}
+  );
+};
