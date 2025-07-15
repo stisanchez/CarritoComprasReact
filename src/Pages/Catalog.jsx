@@ -64,7 +64,7 @@ export const Catalog = () => {
   return (
     <div className='divCatalog'>
       {/* Filtros con PrimeReact */}
-      <div className="p-inputgroup filtros" style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+      <div className="p-inputgroup filtros">
         <InputText
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -85,6 +85,7 @@ export const Catalog = () => {
 
       {/* Lista de productos */}
       <div className='contenedor-products-list'>
+
         {productosVisibles.map((product, index) => {
           const isLast = index === productosVisibles.length - 1;
           return (
@@ -95,16 +96,8 @@ export const Catalog = () => {
         })}
 
         {loading && (
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: '2rem',
-            backgroundColor: 'rgba(0, 23, 51, 0.05)', // azul oscuro transparente
-            borderRadius: '8px',
-            marginTop: '1rem'
-          }}>
-            <ProgressSpinner style={{ width: '60px', height: '60px' }} strokeWidth="4" />
+          <div className='divLoading'>
+            <ProgressSpinner className='spinner' strokeWidth="4" />
           </div>
         )}
 

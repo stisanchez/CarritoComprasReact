@@ -221,6 +221,28 @@ body {
   font-weight: 600;
   color: #c52222;
 }
+
+.card-catalog .filtros {
+  display: "flex";
+  gap: "1rem";
+  margin-bottom: "1.5rem";
+}
+
+.divCatalog .contenedor-products-list .divLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(0, 23, 51, 0.05);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.divCatalog .contenedor-products-list .divLoading .spinner {
+  width: 60px;
+  height: 60px;
+}
+
 @media (max-width: 400px) {
   .card-catalog {
     width: 90%;
