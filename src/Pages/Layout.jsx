@@ -5,7 +5,7 @@ import 'primeicons/primeicons.css';
 import '../styles/layout.css'
 import '../styles/Panels.css'
 import { Image } from 'primereact/image';
-import { Link, Outlet, redirect } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { Card } from 'primereact/card';
 import { Badge } from 'primereact/badge';
 import { useContext } from 'react';
@@ -21,7 +21,7 @@ export const Layout = () => {
     { label: 'Carrito de compras', icon: 'pi pi-fw pi-cart-plus',template: () => <Link to="/shoppingCart" className='link-menu'><Button label="Carrito de compras" icon="pi pi-shopping-cart"  className='button-menu-link'/></Link> }
   ];
 
-  const { usuario, cantidadCarrito } = useContext(DataContext);
+  const { cantidadCarrito } = useContext(DataContext);
 
   return (
 

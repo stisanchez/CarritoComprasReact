@@ -1,9 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import GetAll_Products from '../Components/Utils/GetProducts'
-import { ImagenComponent } from './../Components/Common/ImagenComponent';
-import { Link } from 'react-router-dom';
-import { Button } from 'primereact/button';
-import DataContext from '../Components/Context/DataContext';
 import CardProductsBig from '../Components/Products/CardProductsBig';
 import { InputText } from 'primereact/inputtext';
 import { Dropdown } from 'primereact/dropdown';
@@ -25,10 +21,8 @@ export const Catalog = () => {
   ];
 
   const productosFiltrados = products.filter((product) => {
-    // Normaliza tipo a string vacía si es null/undefined
     const tipoStr = typeof tipo === "string" ? tipo : "";
 
-    // Normaliza category a string también
     const categoriaStr = typeof product.category === "string" ? product.category : "";
 
     const coincideCategoria =
@@ -48,7 +42,7 @@ export const Catalog = () => {
   console.log('tipo seleccionado:', tipo);
 
   return (
-    <>
+    <div className='divCatalog'>
       {/* Filtros con PrimeReact */}
       <div className="p-inputgroup filtros" style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
         <InputText
@@ -80,6 +74,6 @@ export const Catalog = () => {
           <p>No se encontraron productos.</p>
         )}
       </div>
-    </>
+    </div>
   )
 }
