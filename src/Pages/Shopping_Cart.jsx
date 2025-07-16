@@ -16,7 +16,7 @@ export const Shopping_Cart = () => {
     <>
       <div>
         <h2>Usuario: {usuario}</h2>
-        <h3>Estos son los artículos que agregaste al carrito, revisa antes de proceder con la compra</h3>
+        
       </div>
 
       <div className='contenedor-pagina-carrito'>
