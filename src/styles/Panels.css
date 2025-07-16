@@ -2,6 +2,13 @@
     padding: 1rem;
 }
 
+.paneltextImage {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    flex-wrap: nowrap; 
+}
+
 .paneltextImage .info-text {
     padding: 1rem;
     display: flex;
@@ -15,8 +22,8 @@
 }
 
 .paneltextImage .image-side img {
-    width: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .paneltextImage p {
@@ -25,16 +32,10 @@
 @media (max-width: 768px) {
   .paneltextImage {
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .paneltextImage .image-side img {
     max-height: 300px;
   }
-}
-.paneltextImage {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap; /* Para que sea responsive */
 }

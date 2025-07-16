@@ -1,199 +1,213 @@
 :root {
-    --primary: #001733;
-    --secondary: #553bcb;
-    --darkgray: #22262a;
-    --ligthgray: #d3d3d3;
-    --gray: #808080;
-    --white: #f8f8f8;
-    --active: #61dafb;
+  --primary: #001733;
+  --secondary: #553bcb;
+  --darkgray: #22262a;
+  --ligthgray: #d3d3d3;
+  --gray: #808080;
+  --white: #f8f8f8;
+  --active: #61dafb;
+}
+
+input {
+  background: #fff;
 }
 
 .menu-layout {
-    display: grid;
-    grid-template-columns: 5rem 1fr 5rem;
-    background-color: var(--primary);
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  background-color: var(--primary);
+  padding: 10px;
 }
 
 .menu-layout .divNavBar {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .menu-layout .divNavBar .NavBar {
-    background: var(--primary);
-    border: none;
+  background: var(--primary);
+  border: none;
 }
 
 .menu-layout .divNavBar .NavBar .p-menuitem-content:hover {
-    color: none;
-    background: none;
+  color: none;
+  background: none;
 }
 
 .menu-layout .divNavBar .NavBar button {
-    background: var(--primary);
-    border: none;
+  background: var(--primary);
+  border: none;
 }
 
 .menu-layout .divNavBar .NavBar button:hover {
-    color: var(--active);
+  color: var(--active);
 }
 
-
-
 .imagen-logo-layout {
-    width: 60px;
+  width: 60px;
+}
+
+.p-card {
+  background-color: #e0ecf5;
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-repeat: repeat;
+}
+
+.p-card .p-card-body {
+  padding: 0.1rem;
+}
+
+.p-card .p-card-content {
+  padding: 0.1rem 0;
 }
 
 .p-component {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .contenedor-products-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .contenedor-cards {
-    width: 250px;
-    max-width: 250px;
+  width: 250px;
+  max-width: 250px;
 }
 
 .imagen-component {
-    max-width: 75px;
-    max-height: 100px;
-    margin: 0 auto;
+  max-width: 75px;
+  max-height: 100px;
+  margin: 0 auto;
 }
 
 .contenedor-imagen-catalog {
-    text-align: center;
-    height: 115px;
-    max-height: 115px;
-    margin-top: 10px;
+  text-align: center;
+  height: 115px;
+  max-height: 115px;
+  margin-top: 10px;
 }
 
 .card-product-catalog {
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px 16px 16px 16px;
-    width: 350px;
-    box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border-color: #000000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 16px 16px;
+  width: 350px;
+  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-color: #000000;
 }
 
 .card-product-catalog-body {
-    background-color: #fffcfc;
-    flex-grow: 1;
-    padding: 24px;
+  background-color: #fffcfc;
+  flex-grow: 1;
+  padding: 24px;
 }
 
 .card-product-catalog-title {
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    height: 65px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 65px;
 }
 
 .card-product-catalog-text {
-    line-height: 1.4;
-    margin: 10px 0px 0px 0px;
-    font-size: 17px;
-    color: #000000;
-    max-height: 250px;
-    height: 250px;
-    overflow: auto;
-
+  line-height: 1.4;
+  margin: 10px 0px 0px 0px;
+  font-size: 17px;
+  color: #000000;
+  max-height: 250px;
+  height: 250px;
+  overflow: auto;
 }
 
 .contenedor-boton-agregar-carrito {
-    text-align: center;
-    margin-top: 25px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .carousel-container {
-    width: 77%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .carousel-container .p-carousel-container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .carousel-item-xxxxxx {
-    display: inline;
+  display: inline;
 }
 
 .image-carousel {
-    width: 400px;
-    max-width: 400px;
-    float: right;
-    height: 400px;
-    max-height: 400px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-top: 10px;
+  width: 400px;
+  max-width: 400px;
+  float: right;
+  height: 400px;
+  max-height: 400px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 10px;
 }
 
 .p-carousel-items-content {
-    height: auto;
-    width: 75%;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .p-promotion-description {
-    line-height: 27px;
-
+  line-height: 27px;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 30px;
-    margin: 0 auto;
-    background-color: var(--surface-100);
-    padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+  margin: 0 auto;
+  background-color: var(--surface-100);
+  padding: 20px 20px;
 }
 
 .textbox-contactUs {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 .contenedor-botones-contactUs {
-    text-align: end;
+  text-align: end;
 }
 
 .p-overlay-badge {
-    font-size: 2rem;
-    margin-top: 18px;
-    margin-right: 10px;
+  font-size: 2rem;
+  margin-top: 18px;
+  margin-right: 10px;
 }
 
 .fieldset-about-us {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contenedor-nuestros-clientes {
-    width: 50%;
-    max-width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .image-client-carousel {
-    width: 100%;
-    max-width: 100%;
-    height: 400px;
-    max-height: 400px;
-    margin-top: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  max-height: 400px;
+  margin-top: 10px;
 }
 
 
@@ -280,20 +294,20 @@
 }
 
 .contenedor-carrito {
-    margin-left: 15px;
-    margin-bottom: 15px;
-    color: var(--surface-100);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  color: var(--surface-100);
 }
 
 .link-menu {
-    text-decoration: none;
-    color: #000000;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .p-megamenu-horizontal {
-    align-items: center;
+  align-items: center;
 }
 
 .p-inputnumber-input {

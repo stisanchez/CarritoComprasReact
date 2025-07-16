@@ -1,15 +1,15 @@
-import { TabMenu } from 'primereact/tabmenu';
 import { Button } from 'primereact/button';
 import { MegaMenu } from 'primereact/megamenu';
 import 'primeicons/primeicons.css';
 import '../styles/layout.css'
 import '../styles/Panels.css'
 import { Image } from 'primereact/image';
-import { Link, Outlet, redirect } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { Card } from 'primereact/card';
 import { Badge } from 'primereact/badge';
 import { useContext } from 'react';
 import DataContext from '../Components/Context/DataContext';
+import LogoEmpresa from '../Images/logo-empresa.png'
 
 export const Layout = () => {
 
@@ -21,7 +21,7 @@ export const Layout = () => {
     { label: 'Carrito de compras', icon: 'pi pi-fw pi-cart-plus',template: () => <Link to="/shoppingCart" className='link-menu'><Button label="Carrito de compras" icon="pi pi-shopping-cart"  className='button-menu-link'/></Link> }
   ];
 
-  const { usuario, cantidadCarrito } = useContext(DataContext);
+  const { cantidadCarrito } = useContext(DataContext);
 
   return (
 
@@ -29,7 +29,7 @@ export const Layout = () => {
       <div>
         <div className="menu-layout">
           <div className='divLogo'>
-            <Image src='https://png.pngtree.com/png-clipart/20190613/original/pngtree-logo-company-design-png-image_3588263.jpg' alt="Image" width="60" className='imagen-logo-layout' />
+            <Image src={LogoEmpresa} alt="Zkotia Store" className='imagen-logo-layout' />
           </div>
           <div className='divNavBar'>
             <MegaMenu className='NavBar' model={items} orientation="horizontal" />

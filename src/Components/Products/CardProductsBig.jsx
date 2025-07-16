@@ -7,7 +7,7 @@ export default function CardProductsBig({ product }) {
     const { setCarrito_Function } = useContext(DataContext);
     return (
         <>
-            <div className="card">
+            <div className="card-catalog">
                 <div className="badge">{product.category}</div>
                 <div className="tilt">
                     <div className="img">
