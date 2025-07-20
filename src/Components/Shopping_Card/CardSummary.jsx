@@ -17,7 +17,7 @@ export const CardSummary = ({ listaItems }) => {
     const precioTotal_Items = listaItems.reduce((acc, item) => acc + parseFloat(item.precioFinalArticulo), 0);
     const taxes = (precioTotal_Items) * (0.13);
     const totalyze = precioTotal_Items + taxes;
-    const count_Arts = listaItems.reduce((acc, item) => acc + parseFloat(item.cantidad), 0);
+    const count_Items = listaItems.reduce((acc, item) => acc + parseFloat(item.cantidad), 0);
 
     const shippingMethods = [
         { label: 'Opción de envío', value: '0' },
@@ -46,7 +46,7 @@ export const CardSummary = ({ listaItems }) => {
                 <Card title="Summary" subTitle="" className='card-summary'>
                     <div className='fila-summary'>
                         <div>Items</div>
-                        <div> <Badge value={count_Arts} /></div>
+                        <div> <Badge value={count_Items} /></div>
                     </div>
                     <div className='fila-summary'>
                         <div>Subtotal</div>
