@@ -22,6 +22,7 @@ export const Promotions = () => {
         carouselItems={carouselItems}
         itemTemplate={itemTemplate}
         time={3000}
+        className='contenedor-carrusel'
       />
     </div>
   )
