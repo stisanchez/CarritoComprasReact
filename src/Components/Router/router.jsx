@@ -7,6 +7,7 @@ import { AboutUs } from './../../Pages/AboutUs';
 import { Catalog } from './../../Pages/Catalog';
 import { Shopping_Cart } from './../../Pages/Shopping_Cart';
 import { ContactUs } from './../../Pages/ContactUs';
+import { Voucher } from '../Shopping_Card/Voucher';
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path: 'shoppingCart', 
                 element: <Shopping_Cart/>
+            },
+             {
+                path: 'voucher', 
+                element: <Voucher/>
             },
         ],
     },
