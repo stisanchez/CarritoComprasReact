@@ -36,7 +36,17 @@ export const CardSummary = ({ listaItems }) => {
     useEffect(() => {
     }, [selectedOption]);
 
-    const accept = () => { navigate('/voucher', { replace: true }); }
+   const accept = () => {
+    sessionStorage.removeItem('car'); // Limpia el carrito almacenado
+
+    
+    if (typeof window !== 'undefined') {
+        const evt = new Event('storage'); // Dispara un evento si otros componentes escuchan storage
+        window.dispatchEvent(evt);
+    }
+
+    navigate('/voucher', { replace: true }); // Navega al resumen o factura
+}
     const reject = () => { return; }
 
     return (

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+//import React, { useContext, useEffect } from 'react'
 import DataContext from '../Components/Context/DataContext';
 import { CardProduct } from '../Components/Shopping_Card/CardProduct';
 import { Button } from 'primereact/button';
@@ -6,17 +6,17 @@ import { Dialog } from 'primereact/dialog';
 import { CardSummary } from '../Components/Shopping_Card/CardSummary';
 
 export const Shopping_Cart = () => {
-  const { usuario } = useContext(DataContext);
+  //funciones usuario
+  const storedUser = JSON.parse(localStorage.getItem('user'));
+  const usuario = storedUser?.name || 'Invitado';
 
   const storedName = sessionStorage.getItem('car');
-  const carList = JSON.parse(storedName);
-  console.log('carList: ', carList);
-  const datosTotalesCompra = { subtotal: 100, iva: 13, totalCompra: 113 }
+  const carList = storedName ? JSON.parse(storedName) : [];
+
   return (
     <>
       <div>
         <h2>Usuario: {usuario}</h2>
-        
       </div>
 
       <div className='contenedor-pagina-carrito'>
@@ -39,9 +39,7 @@ export const Shopping_Cart = () => {
           }
         </div>
         <div className='seccion-carrito-resumen'>
-          <CardSummary
-            listaItems={carList}
-          />
+          <CardSummary listaItems={carList} />
         </div>
       </div>
 
@@ -49,6 +47,5 @@ export const Shopping_Cart = () => {
         <Button label="Cancelar" link onClick={() => window.open('https://react.dev', '_blank')} />
       </div>
     </>
-
   )
 }
