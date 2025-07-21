@@ -1,0 +1,17 @@
+[
+  {
+    "email": "admin@correo.com",
+    "password": "admin123",
+    "name": "Xiomara"
+  },
+  {
+    "email": "cliente@correo.com",
+    "password": "cliente123",
+    "name": "Stiven"
+  },
+   {
+    "email": "cliente@correo.com",
+    "password": "cliente123",
+    "name": "Kenneth"
+  }
+]
