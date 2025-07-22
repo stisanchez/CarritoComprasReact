@@ -1,0 +1,39 @@
+{
+  "orders": [
+    {
+      "id": "",
+      "description": "",
+      "detail": []
+    },
+    {
+      "id": "9983635220",
+      "user": "Kenneth",
+      "description": "",
+      "detail": [
+        {
+          "id_item": 1,
+          "descripcion": "Essence Mascara Lash Princess",
+          "cantidad": 1,
+          "precio": 9.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+          "descuento": 10.48,
+          "garantia": "1 week warranty",
+          "valorDescuento": 1.046952,
+          "precioFinalArticulo": 8.943048000000001
+        }
+      ]
+    },
+    {
+      "id": "1385672069",
+      "user": "Kenneth",
+      "description": "",
+      "detail": null
+    },
+    {
+      "id": "4731673780",
+      "user": "Kenneth",
+      "description": "",
+      "detail": null
+    }
+  ]
+}

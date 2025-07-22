@@ -1,16 +1,16 @@
 import { Dropdown } from 'primereact/dropdown';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Badge } from 'primereact/badge';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { ConfirmPopup } from 'primereact/confirmpopup'; // To use <ConfirmPopup> tag
-import { confirmPopup } from 'primereact/confirmpopup'; // To use confirmPopup method
-import { Voucher } from './Voucher';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import DataContext from './../Context/DataContext';
 
 export const CardSummary = ({ listaItems }) => {
     let navigate = useNavigate();
 
+    const { setVoucher } = useContext(DataContext);
     const [selectedOption, setSelectedOption] = useState('');
     const [selectedMethod, setSelectedMethod] = useState('');
     const [visible, setVisible] = useState('');
@@ -36,17 +36,15 @@ export const CardSummary = ({ listaItems }) => {
     useEffect(() => {
     }, [selectedOption]);
 
-   const accept = () => {
-    sessionStorage.removeItem('car'); // Limpia el carrito almacenado
-
-    
-    if (typeof window !== 'undefined') {
-        const evt = new Event('storage'); // Dispara un evento si otros componentes escuchan storage
-        window.dispatchEvent(evt);
+    const accept = () => {
+        sessionStorage.removeItem('car');
+        if (typeof window !== 'undefined') {
+            const evt = new Event('storage');
+            window.dispatchEvent(evt);
+        }
+        setVoucher(listaItems);
+        navigate('/voucher', { replace: true }); // Navega al resumen o factura
     }
-
-    navigate('/voucher', { replace: true }); // Navega al resumen o factura
-}
     const reject = () => { return; }
 
     return (
