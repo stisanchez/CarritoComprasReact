@@ -13,7 +13,7 @@ export const Stadistics = () => {
 
   return (
     <>
-      <LinesChart categorias={_productos} numero={_numero} />
+      <LinesChart categorias={_productos} numero={_numero} tituloGrafico={"Productos más comprados"} />
     </>
   )
 }

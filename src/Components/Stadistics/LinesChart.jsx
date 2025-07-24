@@ -1,7 +1,7 @@
 import React from 'react'
 import { Chart } from 'primereact/chart';
 
-export const LinesChart = ({ categorias,numero }) => {
+export const LinesChart = ({ categorias,numero, tituloGrafico }) => {
   
     const data = {
         labels: categorias,
@@ -18,7 +18,7 @@ export const LinesChart = ({ categorias,numero }) => {
         plugins: {
             title: {
                 display: true,
-                text: 'Productos más comprados',
+                text: tituloGrafico,
                 font: {
                     size: 14
                 }
