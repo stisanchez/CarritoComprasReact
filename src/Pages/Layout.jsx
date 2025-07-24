@@ -12,14 +12,17 @@ import DataContext from '../Components/Context/DataContext';
 import LogoEmpresa from '../Images/logo-empresa.png';
 
 export const Layout = () => {
-  const { cantidadCarrito } = useContext(DataContext);
+  const { cantidadCarrito, usuario,setUsuario } = useContext(DataContext);
   const navigate = useNavigate();
+
+  console.log('usuario_Layout:', usuario);
 
   const storedUser = JSON.parse(localStorage.getItem('user'));
   const userName = storedUser?.name;
 
   const handleLogout = () => {
     localStorage.removeItem('user');
+    setUsuario('');
     navigate('/login');
   };
 
@@ -29,6 +32,7 @@ export const Layout = () => {
     { label: 'Contáctenos', icon: 'pi pi-fw pi-telegram', template: () => <Link to="/contactUs" className='link-menu'><Button label="Contáctenos" icon="pi pi-telegram" className='button-menu-link' /></Link> },
     { label: 'Acerca de nostros', icon: 'pi pi-fw pi-building-columns', template: () => <Link to="/about" className='link-menu'><Button label="Acerca de nosotros" icon="pi pi-warehouse" className='button-menu-link' /></Link> },
     { label: 'Carrito de compras', icon: 'pi pi-fw pi-cart-plus', template: () => <Link to="/shoppingCart" className='link-menu'><Button label="Carrito de compras" icon="pi pi-shopping-cart" className='button-menu-link' /></Link> },
+    usuario && { label: 'Estadisticas', icon: 'pi pi-fw pi-cart-plus', template: () => <Link to="/stadistics" className='link-menu'><Button label="Estadisticas" icon="pi pi-chart-line" className='button-menu-link' /></Link> },
   ];
 
   // Agregar item de usuario o login según estado

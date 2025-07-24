@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // ← IMPORTANTE
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
@@ -7,25 +7,32 @@ import { Card } from 'primereact/card';
 import users from '../Data/users.json';
 
 import '../styles/Login.css';
+import DataContext from '../Components/Context/DataContext';
 
 export const Login = () => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const navigate = useNavigate(); // ← Hook para redirección
+  const { usuario, setUsuario } = useContext(DataContext);
 
   const handleLogin = () => {
     const user = users.find(
       (u) => u.email === credentials.email && u.password === credentials.password
     );
 
-   if (user) {
-  setError('');
-  localStorage.setItem('user', JSON.stringify(user)); // ✅ GUARDAR el usuario logeado
-  navigate('/home'); // ← Redirige a la ruta /home
-}else {
+    if (user) {
+      setError('');
+      localStorage.setItem('user', JSON.stringify(user)); // ✅ GUARDAR el usuario logeado
+      navigate('/home'); // ← Redirige a la ruta /home
+      setUsuario(user.name);
+    } else {
       setError('Correo o contraseña incorrectos');
     }
   };
+
+  useEffect(() => {
+    //setUsuario(user.name);
+  }, [usuario]);
 
   return (
     <div className="login-container">

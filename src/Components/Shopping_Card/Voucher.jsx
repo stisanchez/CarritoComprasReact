@@ -2,13 +2,18 @@ import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { Image } from 'primereact/image';
 import doneImage from '../../Images/done.png'
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import DataContext from '../Context/DataContext';
+import CreateOrder_db from '../Utils/CreateOrder';
 
 export const Voucher = () => {
 
   const [orderNumber, setOrderNumber] = useState('');
   const navigate = useNavigate();
+  const { voucher, setVoucher } = useContext(DataContext);
+  const storedUser = JSON.parse(localStorage.getItem('user'));
+  const usuario = storedUser?.name || 'Invitado';
 
   function createOrder_Number(length) {
     var result = '';
@@ -20,8 +25,11 @@ export const Voucher = () => {
   }
 
   useEffect(() => {
-    const orderNumber = createOrder_Number(10);
-    setOrderNumber(orderNumber);
+    const orderN = createOrder_Number(10);
+    setOrderNumber(orderN);
+    //SE CREA ORDEN
+    CreateOrder_db(orderN, usuario, "", voucher);
+    setVoucher(null);
   }, []);
 
   const header = <div>
