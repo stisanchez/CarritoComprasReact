@@ -46,6 +46,195 @@
           "precioFinalArticulo": 16.353818999999998
         }
       ]
+    },
+    {
+      "id": "8198762009",
+      "user": "Xiomara",
+      "description": "",
+      "detail": [
+        {
+          "id_item": "1",
+          "descripcion": "Essence Mascara Lash Princess",
+          "cantidad": 1,
+          "precio": 10,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+          "descuento": 1,
+          "garantia": "1 year warranty",
+          "valorDescuento": 0.1,
+          "precioFinalArticulo": 9.9
+        },
+        {
+          "id_item": "12",
+          "descripcion": "Annibale Colombo Sofa",
+          "cantidad": 1,
+          "precio": 2499.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+          "descuento": 14.4,
+          "garantia": "Lifetime warranty",
+          "valorDescuento": 359.99856,
+          "precioFinalArticulo": 2139.99144
+        },
+        {
+          "id_item": "51",
+          "descripcion": "Boxed Blender",
+          "cantidad": 1,
+          "precio": 39.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
+          "descuento": 7.26,
+          "garantia": "5 year warranty",
+          "valorDescuento": 2.903274,
+          "precioFinalArticulo": 37.086726
+        }
+      ]
+    },
+    {
+      "id": "8801886064",
+      "user": "Stiven",
+      "description": "",
+      "detail": [
+        {
+          "id_item": "54",
+          "descripcion": "Citrus Squeezer Yellow",
+          "cantidad": 1,
+          "precio": 8.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+          "descuento": 12.1,
+          "garantia": "2 year warranty",
+          "valorDescuento": 1.08779,
+          "precioFinalArticulo": 7.90221
+        },
+        {
+          "id_item": "56",
+          "descripcion": "Electric Stove",
+          "cantidad": 1,
+          "precio": 49.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
+          "descuento": 14.04,
+          "garantia": "2 year warranty",
+          "valorDescuento": 7.0185960000000005,
+          "precioFinalArticulo": 42.971404
+        },
+        {
+          "id_item": "60",
+          "descripcion": "Grater Black",
+          "cantidad": 1,
+          "precio": 10.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/thumbnail.webp",
+          "descuento": 3.56,
+          "garantia": "1 month warranty",
+          "valorDescuento": 0.391244,
+          "precioFinalArticulo": 10.598756
+        },
+        {
+          "id_item": "78",
+          "descripcion": "Apple MacBook Pro 14 Inch Space Grey",
+          "cantidad": 1,
+          "precio": 1999.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
+          "descuento": 4.69,
+          "garantia": "3 year warranty",
+          "valorDescuento": 93.799531,
+          "precioFinalArticulo": 1906.1904690000001
+        }
+      ]
+    },
+    {
+      "id": "4602756093",
+      "user": "Kenneth",
+      "description": "",
+      "detail": [
+        {
+          "id_item": "66",
+          "descripcion": "Microwave Oven",
+          "cantidad": 1,
+          "precio": 89.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/thumbnail.webp",
+          "descuento": 12.13,
+          "garantia": "1 year warranty",
+          "valorDescuento": 10.915787,
+          "precioFinalArticulo": 79.074213
+        },
+        {
+          "id_item": "80",
+          "descripcion": "Huawei Matebook X Pro",
+          "cantidad": 1,
+          "precio": 1399.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp",
+          "descuento": 9.38,
+          "garantia": "No warranty",
+          "valorDescuento": 131.319062,
+          "precioFinalArticulo": 1268.670938
+        }
+      ]
+    },
+    {
+      "id": "7794209017",
+      "user": "Kenneth",
+      "description": "",
+      "detail": [
+        {
+          "id_item": "66",
+          "descripcion": "Microwave Oven",
+          "cantidad": 1,
+          "precio": 89.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/thumbnail.webp",
+          "descuento": 12.13,
+          "garantia": "1 year warranty",
+          "valorDescuento": 10.915787,
+          "precioFinalArticulo": 79.074213
+        }
+      ]
+    },
+    {
+      "id": "5443414091",
+      "user": "Kenneth",
+      "description": "",
+      "detail": [
+        {
+          "id_item": "83",
+          "descripcion": "Blue & Black Check Shirt",
+          "cantidad": 3,
+          "precio": 29.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp",
+          "descuento": 15.35,
+          "garantia": "3 year warranty",
+          "valorDescuento": 4.603465,
+          "precioFinalArticulo": 25.386535
+        },
+        {
+          "id_item": "84",
+          "descripcion": "Gigabyte Aorus Men Tshirt",
+          "cantidad": 7,
+          "precio": 24.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+          "descuento": 0.94,
+          "garantia": "3 year warranty",
+          "valorDescuento": 0.23490599999999995,
+          "precioFinalArticulo": 24.755094
+        },
+        {
+          "id_item": "86",
+          "descripcion": "Man Short Sleeve Shirt",
+          "cantidad": 1,
+          "precio": 19.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
+          "descuento": 6.83,
+          "garantia": "3 year warranty",
+          "valorDescuento": 1.365317,
+          "precioFinalArticulo": 18.624682999999997
+        },
+        {
+          "id_item": "89",
+          "descripcion": "Nike Baseball Cleats",
+          "cantidad": 20,
+          "precio": 79.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/thumbnail.webp",
+          "descuento": 18.04,
+          "garantia": "6 months warranty",
+          "valorDescuento": 14.430195999999999,
+          "precioFinalArticulo": 65.559804
+        }
+      ]
     }
   ],
   "products": [
@@ -54,9 +243,9 @@
       "title": "Essence Mascara Lash Princess",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "category": "beauty",
-      "price": 9.99,
-      "discountPercentage": 10.48,
-      "rating": 2.56,
+      "price": 10,
+      "discountPercentage": 1,
+      "rating": 4.64,
       "stock": 99,
       "tags": [
         "beauty",
@@ -70,8 +259,8 @@
         "height": 13.08,
         "depth": 22.99
       },
-      "warrantyInformation": "1 week warranty",
-      "shippingInformation": "Ships in 3-5 business days",
+      "warrantyInformation": "1 year warranty",
+      "shippingInformation": "Ships in 2 weeks",
       "availabilityStatus": "In Stock",
       "reviews": [
         {
