@@ -11885,7 +11885,7 @@
       "age": null
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "stiven",
       "lastName": "sanchez",
       "maidenName": "rodriguez",
@@ -11894,7 +11894,7 @@
       "email": "stsanchez@gmail.com",
       "phone": "88828588",
       "username": "stisanchez",
-      "password": "3242342",
+      "password": "123456",
       "birthDate": "2025-07-18",
       "image": "https://wallpapers.com/images/featured/fotos-de-perfil-xj8jigxkai9jag4g.jpg",
       "university": "TEC"
