@@ -9,6 +9,7 @@ export const MyContextProvider = () => {
   const [itemIdToDelete, setItemIdToDelete] = useState(null);
   const [usuario, setUsuario] = useState("");
   const [voucher, setVoucher] = useState([]);
+   const [orders, setOrders] = useState([]);
 
   const setCarrito_Function = (nuevoProducto) => {
     const validarRepetido = carritoFinal.filter((item) => item.id_item === nuevoProducto.id);
@@ -62,7 +63,8 @@ export const MyContextProvider = () => {
   }, [carritoFinal]);
 
   return (
-    <DataContext.Provider value={{ usuario, setUsuario, cantidadCarrito: carritoFinal.length, setCarrito_Function, carritoFinal, cambiarCantidad, eliminarDelCarrito, setVoucher, voucher }}>
+    <DataContext.Provider value={{ usuario, setUsuario, cantidadCarrito: carritoFinal.length, setCarrito_Function, 
+    carritoFinal, cambiarCantidad, eliminarDelCarrito, setVoucher, voucher}}>
       <RouterProvider router={router} />
     </DataContext.Provider>
   )

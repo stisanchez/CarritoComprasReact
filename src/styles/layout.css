@@ -378,3 +378,8 @@ input {
     margin: 30px 0px;
     text-align: center;
 }
+
+.grafico-estadisticas{
+    width: 70%;
+    margin: 0 auto;
+}

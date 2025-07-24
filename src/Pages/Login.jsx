@@ -21,13 +21,10 @@ export const Login = () => {
     );
 
     if (user) {
-      console.log('usuario:', user);
       setError('');
       localStorage.setItem('user', JSON.stringify(user)); // ✅ GUARDAR el usuario logeado
-      //setUsuario(user);
       navigate('/home'); // ← Redirige a la ruta /home
       setUsuario(user.name);
-      console.log('usuario2:', usuario);
     } else {
       setError('Correo o contraseña incorrectos');
     }
@@ -35,7 +32,6 @@ export const Login = () => {
 
   useEffect(() => {
     //setUsuario(user.name);
-    console.log('usuario:', usuario);
   }, [usuario]);
 
   return (

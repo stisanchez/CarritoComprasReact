@@ -9,6 +9,7 @@ import { Shopping_Cart } from './../../Pages/Shopping_Cart';
 import { ContactUs } from './../../Pages/ContactUs';
 import { Voucher } from '../Shopping_Card/Voucher';
 import { Login } from '../../Pages/Login';
+import { Stadistics } from './../../Pages/Stadistics';
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: 'login', 
                 element: <Login/>
+            },
+            {
+                path: 'stadistics', 
+                element: <Stadistics/>
             },
         ],
     },

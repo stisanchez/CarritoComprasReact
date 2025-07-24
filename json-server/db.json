@@ -6,10 +6,67 @@
       "detail": []
     },
     {
-      "id": "9983635220",
+      "id": "8212839666",
       "user": "Kenneth",
       "description": "",
       "detail": [
+        {
+          "id_item": 2,
+          "descripcion": "Eyeshadow Palette with Mirror",
+          "cantidad": 1,
+          "precio": 19.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+          "descuento": 18.19,
+          "garantia": "1 year warranty",
+          "valorDescuento": 3.6361809999999997,
+          "precioFinalArticulo": 16.353818999999998
+        },
+        {
+          "id_item": 3,
+          "descripcion": "Powder Canister",
+          "cantidad": 1,
+          "precio": 14.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+          "descuento": 9.84,
+          "garantia": "3 months warranty",
+          "valorDescuento": 1.475016,
+          "precioFinalArticulo": 13.514984
+        }
+      ]
+    },
+    {
+      "id": "2118388869",
+      "user": "Kenneth",
+      "description": "",
+      "detail": []
+    },
+    {
+      "id": "3224048139",
+      "user": "Kenneth",
+      "description": "",
+      "detail": [
+        {
+          "id_item": 2,
+          "descripcion": "Eyeshadow Palette with Mirror",
+          "cantidad": 1,
+          "precio": 19.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+          "descuento": 18.19,
+          "garantia": "1 year warranty",
+          "valorDescuento": 3.6361809999999997,
+          "precioFinalArticulo": 16.353818999999998
+        },
+        {
+          "id_item": 3,
+          "descripcion": "Powder Canister",
+          "cantidad": 1,
+          "precio": 14.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+          "descuento": 9.84,
+          "garantia": "3 months warranty",
+          "valorDescuento": 1.475016,
+          "precioFinalArticulo": 13.514984
+        },
         {
           "id_item": 1,
           "descripcion": "Essence Mascara Lash Princess",
@@ -24,16 +81,107 @@
       ]
     },
     {
-      "id": "1385672069",
+      "id": "5969910865",
       "user": "Kenneth",
       "description": "",
-      "detail": null
+      "detail": [
+        {
+          "id_item": 1,
+          "descripcion": "Essence Mascara Lash Princess",
+          "cantidad": 1,
+          "precio": 9.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+          "descuento": 10.48,
+          "garantia": "1 week warranty",
+          "valorDescuento": 1.046952,
+          "precioFinalArticulo": 8.943048000000001
+        },
+        {
+          "id_item": 2,
+          "descripcion": "Eyeshadow Palette with Mirror",
+          "cantidad": 1,
+          "precio": 19.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+          "descuento": 18.19,
+          "garantia": "1 year warranty",
+          "valorDescuento": 3.6361809999999997,
+          "precioFinalArticulo": 16.353818999999998
+        },
+        {
+          "id_item": 4,
+          "descripcion": "Red Lipstick",
+          "cantidad": 1,
+          "precio": 12.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+          "descuento": 12.16,
+          "garantia": "3 year warranty",
+          "valorDescuento": 1.579584,
+          "precioFinalArticulo": 11.410416
+        },
+        {
+          "id_item": 7,
+          "descripcion": "Chanel Coco Noir Eau De",
+          "cantidad": 1,
+          "precio": 129.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+          "descuento": 16.51,
+          "garantia": "3 year warranty",
+          "valorDescuento": 21.461349000000006,
+          "precioFinalArticulo": 108.528651
+        },
+        {
+          "id_item": 8,
+          "descripcion": "Dior J'adore",
+          "cantidad": 1,
+          "precio": 89.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+          "descuento": 14.72,
+          "garantia": "1 week warranty",
+          "valorDescuento": 13.246528,
+          "precioFinalArticulo": 76.743472
+        }
+      ]
     },
     {
-      "id": "4731673780",
+      "id": "0760084752",
       "user": "Kenneth",
       "description": "",
-      "detail": null
+      "detail": [
+        {
+          "id_item": 3,
+          "descripcion": "Powder Canister",
+          "cantidad": 1,
+          "precio": 14.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+          "descuento": 9.84,
+          "garantia": "3 months warranty",
+          "valorDescuento": 1.475016,
+          "precioFinalArticulo": 13.514984
+        },
+        {
+          "id_item": 2,
+          "descripcion": "Eyeshadow Palette with Mirror",
+          "cantidad": 1,
+          "precio": 19.99,
+          "imagen": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+          "descuento": 18.19,
+          "garantia": "1 year warranty",
+          "valorDescuento": 3.6361809999999997,
+          "precioFinalArticulo": 16.353818999999998
+        }
+      ]
+    },
+    {
+      "id": "2790479691",
+      "user": "Kenneth",
+      "description": "",
+      "detail": []
+    },
+    {
+      "id": "7234745408",
+      "user": "Kenneth",
+      "description": "",
+      "detail": []
     }
   ]
 }
