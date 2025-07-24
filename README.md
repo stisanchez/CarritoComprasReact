@@ -1,12 +1,26 @@
-# React + Vite
+# 🛒 Carrito - Proyecto en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de carrito de compras construido con **React 19.1**, **PrimeReact**, **Chart.js**, y **Vite**. Incluye funcionalidades modernas para una tienda en línea y un entorno de desarrollo ágil.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Instalación paso a paso
 
-## Expanding the ESLint configuration
+### 1. Clona el repositorio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/tu-usuario/carrito.git
+cd carrito
+
+
+### 2. Instala dependencias
+npm install
+npm install react@19.1.0 react-dom@19.1.0 react-router-dom@6
+npm install primereact@10.9.6 primeicons@7.0.0
+npm install chart.js@4.5.0
+npm install emailjs-com@3.2.0
+
+npm install -D vite@7.0.0 @vitejs/plugin-react
+npm install -D eslint @eslint/js eslint-plugin-react-hooks eslint-plugin-react-refresh
+npm install -D @types/react @types/react-dom globals
+
