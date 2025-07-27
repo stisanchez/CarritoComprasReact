@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // ← IMPORTANTE
+import { useNavigate } from 'react-router-dom';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
@@ -12,7 +12,7 @@ import DataContext from '../Components/Context/DataContext';
 export const Login = () => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // ← Hook para redirección
+  const navigate = useNavigate();
   const { usuario, setUsuario } = useContext(DataContext);
 
   const handleLogin = () => {
@@ -23,7 +23,7 @@ export const Login = () => {
     if (user) {
       setError('');
       localStorage.setItem('user', JSON.stringify(user)); // ✅ GUARDAR el usuario logeado
-      navigate('/home'); // ← Redirige a la ruta /home
+      navigate('/home');
       setUsuario(user.name);
     } else {
       setError('Correo o contraseña incorrectos');
