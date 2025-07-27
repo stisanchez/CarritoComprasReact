@@ -4,6 +4,7 @@ import { CardProduct } from '../Components/Shopping_Card/CardProduct';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 import { CardSummary } from '../Components/Shopping_Card/CardSummary';
+import { useContext } from 'react';
 
 export const Shopping_Cart = () => {
   //funciones usuario
@@ -12,6 +13,7 @@ export const Shopping_Cart = () => {
 
   const storedName = sessionStorage.getItem('car');
   const carList = storedName ? JSON.parse(storedName) : [];
+  const { carritoFinal } = useContext(DataContext);
 
   return (
     <>
@@ -39,7 +41,7 @@ export const Shopping_Cart = () => {
           }
         </div>
         <div className='seccion-carrito-resumen'>
-          <CardSummary listaItems={carList} />
+          <CardSummary listaItems={carritoFinal} />
         </div>
       </div>
 
