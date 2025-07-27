@@ -9,10 +9,6 @@ export const CardProduct = ({ id, nombre, cantidad, precioUnitario, imagen, desc
 
     const { cambiarCantidad, eliminarDelCarrito, carritoFinal } = useContext(DataContext);
 
-    const save = () => {
-        // Handle default action (e.g., save)
-    }
-
     return (
         <>
             <div className='card-carrito-detalle'>

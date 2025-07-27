@@ -9,15 +9,19 @@ import DataContext from './../Context/DataContext';
 
 export const CardSummary = ({ listaItems }) => {
     let navigate = useNavigate();
-
-    const { setVoucher } = useContext(DataContext);
+    const { setVoucher, carritoFinal } = useContext(DataContext);
     const [selectedOption, setSelectedOption] = useState('');
     const [selectedMethod, setSelectedMethod] = useState('');
     const [visible, setVisible] = useState('');
-    const precioTotal_Items = listaItems.reduce((acc, item) => acc + parseFloat(item.precioFinalArticulo), 0);
+
+    const descuentoTotal = carritoFinal.reduce((acc, item) => acc + parseFloat(item.valorDescuento), 0);
+    const precioTotal_Items = carritoFinal.reduce((acc, item) => acc + parseFloat(item.precioFinalArticulo), 0);
     const taxes = (precioTotal_Items) * (0.13);
     const totalyze = precioTotal_Items + taxes;
-    const count_Items = listaItems.reduce((acc, item) => acc + parseFloat(item.cantidad), 0);
+    const count_Items = carritoFinal.reduce((acc, item) => acc + parseFloat(item.cantidad), 0);
+    const COMPRA_TOTAL = parseFloat(selectedOption) > 0 ? ((totalyze + parseFloat(selectedOption)) - parseFloat(descuentoTotal) ).toFixed(2) : totalyze.toFixed(2);
+
+
 
     const shippingMethods = [
         { label: 'Opción de envío', value: '0' },
@@ -33,8 +37,10 @@ export const CardSummary = ({ listaItems }) => {
         { label: 'MC   *********5678 ', value: '3' }
     ];
 
+
     useEffect(() => {
-    }, [selectedOption]);
+        console.log('listaItems', listaItems);
+    }, []);
 
     const accept = () => {
         sessionStorage.removeItem('car');
@@ -42,7 +48,7 @@ export const CardSummary = ({ listaItems }) => {
             const evt = new Event('storage');
             window.dispatchEvent(evt);
         }
-        setVoucher(listaItems);
+        setVoucher(carritoFinal);
         navigate('/voucher', { replace: true }); // Navega al resumen o factura
     }
     const reject = () => { return; }
@@ -60,12 +66,16 @@ export const CardSummary = ({ listaItems }) => {
                         <div>Subtotal</div>
                         <div> ${precioTotal_Items.toFixed(2)}</div>
                     </div>
+                    {/* <div className='fila-summary'>
+                        <div>Descuento</div>
+                        <div> ${descuentoTotal.toFixed(2)}</div>
+                    </div> */}
                     <div className='fila-summary'>
-                        <div>Taxes</div>
+                        <div>Impuestos</div>
                         <div>${taxes.toFixed(2)}</div>
                     </div>
                     <div className='fila-summary'>
-                        <div>Shipping</div>
+                        <div>Envío</div>
                         <div>
                             <Dropdown value={selectedOption} onChange={(e) => setSelectedOption(e.value)} options={shippingMethods} optionLabel="label"
                                 editable placeholder="Opción de envío" className="w-full md:w-14rem dropdwon-payment" />
@@ -73,7 +83,7 @@ export const CardSummary = ({ listaItems }) => {
                     </div>
 
                     <div className='fila-summary'>
-                        <div>Method page</div>
+                        <div>Método de pago</div>
                         <div>
                             <Dropdown value={selectedMethod} onChange={(e) => setSelectedMethod(e.value)} options={cardsSaved} optionLabel="label"
                                 editable placeholder="Método de pago" className="w-full md:w-14rem dropdwon-payment" />
@@ -82,7 +92,7 @@ export const CardSummary = ({ listaItems }) => {
 
                     <div className='fila-summary fila-summary-total'>
                         <div>Total</div>
-                        <div className='total-summary-label'> ${parseFloat(selectedOption) > 0 ? (totalyze + parseFloat(selectedOption)).toFixed(2) : totalyze.toFixed(2)}</div>
+                        <div className='total-summary-label'> ${COMPRA_TOTAL} </div>
                     </div>
                     <div>
                         <Button id="button" label="Checkout" icon="pi pi-credit-card" className='button-proceed-payment' onClick={() => setVisible(true)} />
