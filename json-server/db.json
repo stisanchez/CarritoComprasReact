@@ -8,13 +8,13 @@
         {
           "id_item": "1",
           "descripcion": "Essence Mascara Lash Princess",
-          "cantidad": 1,
+          "cantidad": 3,
           "precio": 9.99,
           "imagen": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
           "descuento": 10.48,
           "garantia": "1 week warranty",
-          "valorDescuento": 1.046952,
-          "precioFinalArticulo": 8.943048000000001
+          "valorDescuento": 3.1408560000000003,
+          "precioFinalArticulo": 29.97
         }
       ]
     },
@@ -26,7 +26,7 @@
         {
           "id_item": "1",
           "descripcion": "Essence Mascara Lash Princess",
-          "cantidad": 1,
+          "cantidad": 2,
           "precio": 9.99,
           "imagen": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
           "descuento": 10.48,

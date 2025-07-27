@@ -11,7 +11,7 @@ export const Voucher = () => {
 
   const [orderNumber, setOrderNumber] = useState('');
   const navigate = useNavigate();
-  const { voucher, setVoucher } = useContext(DataContext);
+  const { voucher, setVoucher, carritoFinal, setCarrito_Function } = useContext(DataContext);
   const storedUser = JSON.parse(localStorage.getItem('user'));
   const usuario = storedUser?.name || 'Invitado';
 
@@ -30,6 +30,7 @@ export const Voucher = () => {
     //SE CREA ORDEN
     CreateOrder_db(orderN, usuario, "", voucher);
     setVoucher(null);
+    setCarrito_Function(null)
   }, []);
 
   const header = <div>
