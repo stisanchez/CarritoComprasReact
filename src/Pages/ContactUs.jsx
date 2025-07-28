@@ -23,7 +23,7 @@ export const ContactUs = () => {
       message: mensaje
     };
 
-    emailjs.send('service_kv1i2vg', 'template_6gk6sh9', templateParams, 'E3_ROVFYcW4-xk8dH')
+    emailjs.send('service_h8w289r', 'template_6gk6sh9', templateParams, 'E3_ROVFYcW4-xk8dH')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setStatus("Mensaje enviado correctamente.");
